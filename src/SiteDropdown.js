@@ -2,7 +2,7 @@ import React from 'react';
 import { Dropdown } from '@bit/primefaces.primereact.dropdown';
 import PrimereactStyle from '@bit/primefaces.primereact.internal.stylelinks';
 
-class Site_Dropdown extends React.Component {
+class SiteDropdown extends React.Component {
   constructor(props) {
 		super(props);
 		this.state = {
@@ -34,4 +34,4 @@ class Site_Dropdown extends React.Component {
   }
 }
 
-export default Site_Dropdown;
+export default SiteDropdown;
