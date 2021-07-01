@@ -7,10 +7,10 @@ class SiteDropdown extends React.Component {
 		super(props);
 		this.state = {
 			storeSelectItems: [
-				{ label: 'Home Depot', value: '' },
-				{ label: 'Lowes', value: '' },
-				{ label: 'Target', value: '' },
-				{ label: 'Walmart', value: '' }
+				{ label: 'Home Depot', value: 'Home Depot' },
+				{ label: 'Lowes', value: 'Lowes' },
+				{ label: 'Target', value: 'Target' },
+				{ label: 'Walmart', value: 'Walmart' }
 			],
 			store: ''
 		};
