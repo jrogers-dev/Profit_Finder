@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import SiteDropdown from './SiteDropdown';'./SiteDropdown'
+import SiteDropdown from './SiteDropdown';
 
 function App() {
   return (

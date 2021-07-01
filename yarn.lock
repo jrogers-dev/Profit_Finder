@@ -1155,6 +1155,13 @@
     react "^16.6.3"
     react-dom "^16.6.3"
 
+"@bit/primefaces.primereact.internal.stylelinks@^3.1.8":
+  version "3.1.8"
+  resolved "https://node.bit.dev/primefaces.primereact.internal.stylelinks/-/primefaces.primereact.internal.stylelinks-3.1.8.tgz#c8f6abf2172f7d5b5f52b8d49b07eb5aea7a2682"
+  integrity sha1-yPar8hcvfVtfUrjUmwfrWup6JoI=
+  dependencies:
+    react "^16.6.3"
+
 "@bit/primefaces.primereact.tooltip@4.2.0":
   version "4.2.0"
   resolved "https://node.bit.dev/primefaces.primereact.tooltip/-/primefaces.primereact.tooltip-4.2.0.tgz#80f26866ffe564d6959ba89bad1678f52a689d1f"
@@ -3243,6 +3250,11 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classnames@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
 
 clean-css@^4.2.3:
   version "4.2.3"
