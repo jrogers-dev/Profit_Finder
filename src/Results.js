@@ -3,14 +3,18 @@ import ReactDataGrid from 'react-data-grid';
 
 const columns = [
   { key: 'id', name: 'ID' },
-  { key: 'title', name: 'Title' },
-  { key: 'count', name: 'Count' } ];
-
-const rows = [{id: 0, title: 'row1', count: 20}, {id: 1, title: 'row1', count: 40}, {id: 2, title: 'row1', count: 60}];
+  { key: 'item', name: 'Item' },
+  { key: 'amznPrice', name: 'Amzn $' },
+  { key: 'storePrice', name: 'Store $' }
+];
+const rows = [];
 
 class Results extends React.Component {
-  constructor (props) {
-    super(props);
+  
+  componentDidMount() {
+    rows.push(
+      {id: 0, item: 'ball', amznPrice: 4.99, storePrice: 2.99}
+    );
   }
 
   render() {
@@ -19,7 +23,6 @@ class Results extends React.Component {
         <ReactDataGrid
           rows={rows}
           columns={columns}
-          minHeight={150} 
         />
       </div>
     );
