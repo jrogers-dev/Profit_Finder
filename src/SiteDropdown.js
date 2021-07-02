@@ -21,7 +21,7 @@ class SiteDropdown extends React.Component {
       <div>
         <PrimereactStyle />
 				<Dropdown
-					style={{ width: 150 }}
+					style={{ width: 200 }}
 					value={this.state.store}
 					options={this.state.storeSelectItems}
 					onChange={e => {

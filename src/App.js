@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import SiteDropdown from './SiteDropdown';
+import SearchCluster from './SearchCluster';
 import Results from './Results';
 
 function App() {
   return (
     <div className="App">
-      <SiteDropdown />
+      <SearchCluster />
       <Results />
     </div>
   );
