@@ -1,4 +1,3 @@
-import './App.css';
 import SearchCluster from './SearchCluster';
 import Results from './Results';
 
