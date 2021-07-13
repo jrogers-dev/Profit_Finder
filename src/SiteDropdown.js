@@ -1,37 +1,26 @@
 import React from 'react';
-import { Dropdown } from '@bit/primefaces.primereact.dropdown';
-import PrimereactStyle from '@bit/primefaces.primereact.internal.stylelinks';
+import { useState } from 'react';
+import Dropdown from  'react-bootstrap/Dropdown';
 
-class SiteDropdown extends React.Component {
-  constructor(props) {
-		super(props);
-		this.state = {
-			storeSelectItems: [
-				{ label: 'Home Depot', value: 'Home Depot' },
-				{ label: 'Lowes', value: 'Lowes' },
-				{ label: 'Target', value: 'Target' },
-				{ label: 'Walmart', value: 'Walmart' }
-			],
-			store: ''
-		};
-  }
-  
-  render() {
-    return (
-      <div>
-        <PrimereactStyle />
-				<Dropdown
-					style={{ width: 130 }}
-					value={this.state.store}
-					options={this.state.storeSelectItems}
-					onChange={e => {
-						this.setState({ store: e.value });
-					}}
-					placeholder='Select a Store'
-				/>
-      </div>
-    );
-  }
+
+function SiteDropdown() {
+	const [site, setSite] = useState("Site Selector");
+
+	return (
+		<>
+			<Dropdown>
+				<Dropdown.Toggle>
+					{site}
+				</Dropdown.Toggle>
+
+				<Dropdown.Menu>
+					<Dropdown.Item onClick={() => setSite("Walmart")}>WalMart</Dropdown.Item>
+    			<Dropdown.Item onClick={() => setSite("Target")}>Target</Dropdown.Item>
+    			<Dropdown.Item onClick={() => setSite("Lowes")}>Lowes</Dropdown.Item>
+				</Dropdown.Menu>
+			</Dropdown>
+		</>
+	);
 }
 
 export default SiteDropdown;
