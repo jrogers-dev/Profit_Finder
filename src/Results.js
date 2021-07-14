@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDataGrid from 'react-data-grid';
+import Container from 'react-bootstrap/Container';
+import Table from 'react-bootstrap/Table';
 
 const columns = [
   { key: 'id', name: 'ID', width: 50 },
@@ -10,32 +11,33 @@ const columns = [
 ];
 const rows = [];
 
-class Results extends React.Component {
+function Results() {
 
-  componentDidMount() {
-    for(let i = 0; i < 10; i++) {
-      rows.push(
-        {
-          id: i, 
-          item: 'ball', 
-          amznPrice: 4.99, 
-          storePrice: 2.99, 
-          difference: (4.99 - 2.99)
-        }
-      );
-    }
-  }
-
-  render() {
-    return (
-      <div>
-        <ReactDataGrid
-          columns={columns}
-          rows={rows}
-        />
-      </div>
-    );
-  }
+  return (
+    <Container fluid>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Amazon $</th>
+            <th>Store $</th>
+            <th>Diff</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>Ball</td>
+            <td>4.99</td>
+            <td>2.99</td>
+            <td>2.00</td>
+          </tr>
+        </tbody>
+      </Table>
+    </Container>
+  );
 }
+
 
 export default Results;
